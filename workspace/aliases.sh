@@ -148,3 +148,7 @@ function fs() {
 		du $arg .[^.]* ./*;
 	fi;
 }
+alias dpcsf='php-cs-fixer'
+export PATH=$HOME/.config/composer/vendor/bin:$PATH
+
+alias dcpcf="php-cs-fixer"
