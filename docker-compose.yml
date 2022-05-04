@@ -423,6 +423,7 @@ services:
         frontend:
           aliases:
             - beta.thamelmart.test
+            - api.thamelmart.test
         backend:
           aliases:
             - api.thamelmart.test
