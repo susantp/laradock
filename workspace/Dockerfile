@@ -102,7 +102,6 @@ USER root
 
 COPY ./aliases.sh /root/aliases.sh
 COPY ./aliases.sh /home/laradock/aliases.sh
-COPY ./.zshrc /home/laradock/.zshrc
 
 RUN sed -i 's/\r//' /root/aliases.sh && \
     sed -i 's/\r//' /home/laradock/aliases.sh && \
@@ -799,7 +798,6 @@ RUN if [ ${NPM_REGISTRY} ]; then \
 # Mount .npmrc into home folder
 COPY ./.npmrc /root/.npmrc
 COPY ./.npmrc /home/laradock/.npmrc
-COPY ./.zshrc /home/laradock/.zshrc
 
 
 ###########################################################################
